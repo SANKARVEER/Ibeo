@@ -1,0 +1,72 @@
+
+
+.navbar {
+    background-color: #005f5b;
+}
+
+.rounded-logo {
+    border-radius: 200px;
+    height: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    position: relative;
+    transition: 0.3s;
+    transform: translateX(0);
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    transform: translateX(10px);
+    /* Hover effect with a transform */
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+    width: 100%;
+}
+
+/* Center the logo on mobile devices */
+@media (max-width: 767px) {
+    .navbar-brand {
+        text-align: center;
+        width: 54%;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        /* Push the toggler icon to the right */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+    .btn-login {
+        background-color: #e6f0e6;
+        color: #035b10;
+        /* border: none; */
+        border-radius: 5px;
+        padding: 8px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid #fcfdfb;
+    }
+    .btn-login:hover{
+        background-color: rgb(202, 225, 202);
+        color: #04932b;
+        border: 1px solid #035703;
+    }
